@@ -6,7 +6,11 @@ let services = document.querySelector("#service");
 let company = document.querySelector("#company");
 
 let loadMore = document.querySelector("#loadMore");
-
+let next = document.querySelector("#next-btn");
+next.addEventListener("click", function() {
+  document.querySelector("#change-img").src="./images/next2.jpg";
+  console.log("50");
+});
 
 //CHANGING SCREEN ON CLICK
 
@@ -64,7 +68,12 @@ company.addEventListener("click", function() {
 let toTop = document.querySelector("#backToTop");
 
 window.onscroll = function(){
-  document.querySelector("#backToTop").style.display="block";
+  let scroll = window.scrollY;
+  if (scroll >= 300) {
+    toTop.style.display="block";
+  } else {
+    toTop.style.display="none";
+  }
 };
 
 toTop.addEventListener("click", function() {

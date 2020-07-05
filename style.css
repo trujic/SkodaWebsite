@@ -5,11 +5,15 @@
 }
 
 h1 {
-  font-family: monospace;
+  font-family: 'Work Sans', sans-serif;
 }
 
 p {
   font-family: sans-serif;
+}
+
+a {
+  font-family: 'Work Sans', sans-serif;
 }
 
 nav {
@@ -35,7 +39,7 @@ nav a:hover {
   color: #21bf73;
 }
 .nav-main {
-  font-size: 18px;
+  font-size: 16px;
   display: inline-flex;
 }
 
@@ -55,11 +59,12 @@ nav a:hover {
 
 .nav-right {
   margin-right: 30px;
-  font-size: 18px;
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .nav-right ul {
-  margin-top: 13px;
+  margin-top: 15px;
 }
 
 .nav-right li {
@@ -111,7 +116,7 @@ nav a:hover {
   top: 48vh;
   right: 3vh;
   width: 300px;
-  height: 80px;
+  height: 90px;
   background-color: black;
   opacity: 0.8;
   z-index: 1;
@@ -122,6 +127,9 @@ nav a:hover {
   color: white;
   font-size: 12px;
   position: relative;
+}
+.next-img img {
+  padding: 10px;
 }
 .next-img i {
   position: absolute;
@@ -146,8 +154,8 @@ nav a:hover {
 
 .next-img p {
   position: absolute;
-  top: 85%;
-  right: 10px;
+  top: 80%;
+  right: 12px;
 }
 
 .main-section {
@@ -181,7 +189,8 @@ nav a:hover {
 }
 
 .box p {
-  font-size: 18px;
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .box:hover {

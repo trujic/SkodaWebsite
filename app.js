@@ -5,6 +5,7 @@ let wos = document.querySelector("#wos");
 let services = document.querySelector("#service");
 let company = document.querySelector("#company");
 
+let loadMore = document.querySelector("#loadMore");
 
 
 //CHANGING SCREEN ON CLICK
@@ -58,4 +59,20 @@ company.addEventListener("click", function() {
   document.querySelector(".world-of-skoda-container").style.display="none";
   document.querySelector(".services-container").style.display="none";
   changeMainWhite();
+});
+
+let toTop = document.querySelector("#backToTop");
+
+window.onscroll = function(){
+  document.querySelector("#backToTop").style.display="block";
+};
+
+toTop.addEventListener("click", function() {
+    window.scrollTo(0, 0);
+});
+
+//Loads more news1
+loadMore.addEventListener("click", function() {
+  document.querySelector(".load-more").style.display="block";
+  document.querySelector("#loadMore").style.display="none";
 });

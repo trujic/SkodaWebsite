@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: monospace;
+}
+
+p {
+  font-family: sans-serif;
+}
+
 nav {
   display: inline-flex;
   justify-content: space-between;
@@ -89,6 +97,7 @@ nav a:hover {
   font-size: 16px;
   font-weight: bold;
   border: none;
+  outline: none;
 }
 
 .explore button:hover {
@@ -104,7 +113,7 @@ nav a:hover {
   width: 300px;
   height: 80px;
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.8;
   z-index: 1;
 }
 
@@ -658,4 +667,22 @@ span:hover {
   top: 50%;
   left: 5vh;
   text-transform: uppercase;
+}
+
+.load-more {
+  display: none;
+}
+
+
+#backToTop {
+  font-size: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(-90deg);
+  padding: 7px 15px;
+  color:white;
+  background-color: black;
+  position: fixed;
+  display: none;
 }
